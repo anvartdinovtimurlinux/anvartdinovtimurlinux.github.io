@@ -1,0 +1,292 @@
+@font-face {
+  font-family: "Appetite New";
+  src: url("../fonts/Appetite_New.otf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("../fonts/MuseoSansCyrl-500.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("../fonts/MuseoSansCyrl-700.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("../fonts/MuseoSansCyrl-900.otf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  width: 80%;
+  min-width: 800px;
+
+  top: 40px;
+  left: 80%;
+  margin-left: -70%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  width: 40%;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item-link {
+  font-family: "Museo Sans Cyrl", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: #bf1818;
+}
+
+.menu-item-link:hover {
+  font-family: "Museo Sans Cyrl", Arial, sans-serif;
+
+  border-bottom: 1px solid #bf1818;
+}
+
+.account-link {
+  font-family: "Museo Sans Cyrl", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: #ffe135;
+
+  border: 2px solid #ffe135;
+
+  padding: 14px 38px;
+  border-radius: 25px;
+}
+
+.account-link:hover {
+  opacity: 0.5;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+
+  min-width: 1000px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+  width: 50%;
+  height: 768px;
+}
+
+.left {
+  background-image: url("../img/background-left.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ffe135;
+
+  color: #bf1818;
+}
+
+.right {
+  background-image: url("../img/background-right.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #bf1818;
+
+  color: #ffe135;
+}
+
+.section-title {
+  font-family: "Appetite New";
+  font-size: 70px;
+}
+
+.section-food {
+  margin-top: 20px;
+}
+
+.section-link {
+  margin-top: 10px;
+
+  font-family: Museo Sans Cyrl;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.section-link:hover {
+  opacity: 0.7;
+}
+
+.left .section-link {
+  border-bottom: 1px solid #bf1818;
+}
+
+.right .section-link {
+  border-bottom: 1px solid #ffe135;
+}
+
+.footer {
+  position: absolute;
+  width: 80%;
+  min-width: 800px;
+
+  bottom: 77px;
+  left: 80%;
+  margin-left: -70%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 45%;
+  margin-right: 5%;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 45%;
+  margin-left: 5%;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials-item:nth-child(n+2) {
+  margin-left: 27px;
+}
+
+.socials-link {
+  width: 40px;
+  height: 40px;
+  display: list-item;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.socials-link:hover {
+  opacity: 0.5;
+}
+
+.socials-link-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.socials-link-vkontakte {
+  background-image: url("../img/vk.png");
+  width: 34px;
+  height: 20px;
+}
+
+.socials-link-facebook {
+  background-image: url("../img/facebook.png");
+  width: 18px;
+  height: 31px;
+}
+
+.socials-link-instagram {
+  background-image: url("../img/instagram.png");
+  width: 25px;
+  height: 26px;
+}
+
+.online-chat {
+  font-family: "Museo Sans Cyrl", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: #bf1818;
+
+  border: 2px solid #bf1818;
+
+  padding: 14px 38px;
+  border-radius: 25px;
+}
+
+.online-chat:hover {
+  opacity: 0.5;
+}
+
+.today-food,
+.documents {
+  font-family: "Museo Sans Cyrl", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: #ffe135;
+}
+
+.today-food:hover,
+.documents:hover {
+  opacity: 0.5;
+}
+
+.today-food::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  top: -5px;
+  width: 50px;
+  height: 50px;
+
+  background-image: url("../img/today-food.png");
+  background-position: center center;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  background-color: #ffe135;
+  border-radius: 50%;
+}
